@@ -20,5 +20,6 @@ RUN apt-get update \
     && git clone https://github.com/cytle/wechat_web_devtools.git \
     && cd wechat_web_devtools \
     && /wxdt/wechat_web_devtools/bin/update_package_nw.sh
+    && /wxdt/wechat_web_devtools/bin/update_nwjs.sh
 
 WORKDIR /wxdt/wechat_web_devtools
