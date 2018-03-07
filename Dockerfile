@@ -7,7 +7,7 @@ RUN apt-get update \
     && add-apt-repository ppa:wine/wine-builds \
     && dpkg --add-architecture i386 \
     && apt-get update \
-    && apt-get install -y tzdata ca-certificates httpie git aptitude\
+    && apt-get install -y tzdata ca-certificates httpie git aptitude libnss3 libnss3:i386 \
     && aptitude search wine \
     && echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections \
     && apt-get install -y wine \
