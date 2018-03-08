@@ -1,4 +1,4 @@
-FROM nvidia/opengl:base-ubuntu16.04
+FROM bestwu/wine:i386
 
 ENV TZ=Asia/Shanghai
 
