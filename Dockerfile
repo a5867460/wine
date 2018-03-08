@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM nvidia/opengl:base-ubuntu16.04
 
 ENV TZ=Asia/Shanghai
 
